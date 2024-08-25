@@ -12,7 +12,7 @@ const app = express()
  
 
 app.get('/', async(req, res)=>{
-    const rows = await pool.query("select * from sarlaft.preguntas")
+    const rows = await pool.query("select * from bevlb9t1kuok6k3syx1d.preguntas")
     res.json(rows)
 })
 
@@ -24,7 +24,7 @@ app.get('/ping', async(req, res)=>{
 });
 
 app.get('/create', async(req, res)=>{
-    const result = await pool.query("INSERT INTO sarlaft.preguntas (texto, tipo, fecha, estado) VALUES ('¿Ajuste Datafano?', 'radio', CURDATE(), 0)");
+    const result = await pool.query("INSERT INTO bevlb9t1kuok6k3syx1d.preguntas (texto, tipo, fecha, estado) VALUES ('¿Ajuste Datafano?', 'radio', CURDATE(), 0)");
     res.json(result)
 });
 
