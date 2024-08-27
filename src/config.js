@@ -12,3 +12,5 @@ export const DB_PASSWORD = process.env.DB_PASSWORD || 'josema'
 export const DB_NAME = process.env.DB_NAME || 'sarlaft'
 export const DB_PORT = process.env.DB_PORT || '3306'
 
+
+
