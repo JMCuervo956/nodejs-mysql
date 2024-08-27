@@ -12,7 +12,7 @@ const app = express()
  
 
 app.get('/', async(req, res)=>{
-    const rows = await pool.query("select * from bevlb9t1kuok6k3syx1d.preguntas")
+    const rows = await pool.query("select texto from bevlb9t1kuok6k3syx1d.preguntas")
     res.json(rows)
 })
 
